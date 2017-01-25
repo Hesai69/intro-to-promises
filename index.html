@@ -5,6 +5,20 @@
 </head>
 <body>
 
+
+
+<script>
+  const $root = document.querySelector('#root');
+  $root.innerHTML = render(['mimi', 'schmimi', 'peapod']);
+  function render(friends) {
+    const list = friends.map( (p) => {
+      return `<li>${p}</li>`;
+    }).join('');
+
+    return (`
+      <h1>Hello There, ${name}</h1>`);
+  }
+</script>
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API -->
 </body>
 </html>
